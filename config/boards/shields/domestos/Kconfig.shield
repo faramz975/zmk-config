@@ -1,2 +1,5 @@
-config SHIELD_domestos
-    def_bool $(shields_list_contains, domestos)
+config SHIELD_DOMESTOS_LEFT
+    def_bool $(shields_list_contains,domestos_left)
+
+config SHIELD_DOMESTOS_RIGHT
+    def_bool $(shields_list_contains,domestos_right) 

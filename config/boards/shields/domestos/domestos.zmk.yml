@@ -1,0 +1,11 @@
+file_format: "1"
+id: domestos
+name: Domestos
+type: shield
+url: https://github.com/faramz975/zmk-config/
+requires: [NRF52840]
+features:
+  - keys
+siblings:
+  - domestos_left
+  - domestos_right

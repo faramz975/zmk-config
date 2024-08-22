@@ -1,0 +1,12 @@
+#include "domestos.dtsi"
+
+&kscan0 {
+    col-gpios
+        = <&pro_micro 21 GPI_ACTIVE_HIGH>,
+          <&pro_micro 20 GPI_ACTIVE_HIGH>,
+          <&pro_micro 19 GPI_ACTIVE_HIGH>,
+          <&pro_micro 18 GPI_ACTIVE_HIGH>,
+          <&pro_micro 15 GPI_ACTIVE_HIGH>,
+          <&pro_micro 14 GPI_ACTIVE_HIGH>,
+          <&pro_micro 16 GPI_ACTIVE_HIGH>;
+};
