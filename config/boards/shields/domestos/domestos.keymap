@@ -7,16 +7,20 @@
 #define RAISE   2 
 #define ADJ 3
 
+&mt {
+    tapping-term-ms = <400>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &mt LGUI ESC  &kp KP_DOT &kp KP_LEFT_PARENTHESIS &kp KP_RIGHT_PARENTHESIS &kp P &kp Y &mo RAISE &mo RAISE &kp F &kp G &kp C &kp R &kp L &mt RGUI BACKSPACE 
-                &mt LSHIFT TAB &kp A &kp O &kp E &kp U &kp I &mt LALT SPACE &mt LALT SPACE &kp D &kp H &kp T &kp N &kp S &mt RSHIFT ENTER
-                &mt LCTRL TILDE2 &kp SEMICOLON &kp Q &kp J &kp K &kp X &mo LOWER &mo LOWER &kp B &kp M &kp W &kp V &kp Z &mt LCTRL DEL
+                &mt LGUI TILDE2  &kp DOT &kp LPAR &kp RPAR &kp P &kp Y &mo RAISE &mo RAISE &kp F &kp G &kp C &kp R &kp L &mt RGUI BSPC 
+                &mt LSHIFT TAB &kp A &kp O &kp E &kp U &kp I &mt LALT SPACE &mt LALT SPACE &kp D &kp H &kp T &kp N &kp S &mt LSHIFT RET
+                &mt LCTRL ESC &kp SEMI &kp Q &kp J &kp K &kp X &mo LOWER &mo LOWER &kp B &kp M &kp W &kp V &kp Z &mt LCTRL DEL
             >;
         };
-        
+                
 };
