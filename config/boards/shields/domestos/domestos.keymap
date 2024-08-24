@@ -34,9 +34,9 @@
 // | CTRL/ESC |  ;  |  Q  |  J   |  K   |  X   |  LOWER   |                                         |  LOWER   |  B   |  M    |  W    |  V   |   Z   | CTRL/DELETE |
 
             bindings = <
-                &mt LGUI TILDE2  &kp DOT &kp LPAR &kp RPAR &kp P &kp Y &mo RSE &mo RSE &kp F &kp G &kp C &kp R &kp L &mt RGUI BSPC 
+                &mt LGUI TILDE2  &kp DOT &kp LPAR &kp RPAR &kp P &kp Y &mo LWR &mo LWR &kp F &kp G &kp C &kp R &kp L &mt RGUI BSPC 
                 &mt LSHIFT TAB &kp A &kp O &kp E &kp U &kp I &mt LALT SPACE &mt LALT SPACE &kp D &kp H &kp T &kp N &kp S &mt LSHIFT RET
-                &mt LCTRL ESC &kp SEMI &kp Q &kp J &kp K &kp X &mo LWR &mo LWR &kp B &kp M &kp W &kp V &kp Z &mt LCTRL DEL
+                &mt LCTRL ESC &kp SEMI &kp Q &kp J &kp K &kp X &mo RSE &mo RSE &kp B &kp M &kp W &kp V &kp Z &mt LCTRL DEL
             >;
 
 
