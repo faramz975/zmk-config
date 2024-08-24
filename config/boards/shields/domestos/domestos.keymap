@@ -29,9 +29,9 @@
 
         default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  SUP/~  |  .  |  (  |  )   |  P   |  Y   |  RAISE   |                                          |  RAISE   |  F   |  G    |  C    |  R   |   L   |   SUP/BACKSPACE  |
+// |  SUP/~  |  .  |  (  |  )   |  P   |  Y   |  LOWER   |                                          |  LOWER   |  F   |  G    |  C    |  R   |   L   |   SUP/BACKSPACE  |
 // |  SHIFT/TAB  |  A  |  O  |  E   |  U   |  I   |ALT/SPACE |                                      |ALT/SPACE |  D   |  H    |  T    |  N   |   S   |   SHIFT/ENTER  |
-// | CTRL/ESC |  ;  |  Q  |  J   |  K   |  X   |  LOWER   |                                         |  LOWER   |  B   |  M    |  W    |  V   |   Z   | CTRL/DELETE |
+// | CTRL/ESC |  ;  |  Q  |  J   |  K   |  X   |  RAISE   |                                         |  RAISE   |  B   |  M    |  W    |  V   |   Z   | CTRL/DELETE |
 
             bindings = <
                 &mt LGUI TILDE2  &kp DOT &kp LPAR &kp RPAR &kp P &kp Y &mo LWR &mo LWR &kp F &kp G &kp C &kp R &kp L &mt RGUI BSPC 
