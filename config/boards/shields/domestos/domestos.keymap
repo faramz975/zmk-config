@@ -29,41 +29,41 @@
 
         default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  SUP/~      |  .  |  (  |  )   |  P   |  Y   |  LOWER   |                                    |  LOWER   |  F   |  G    |  C    |  R   |   L   |   SUP/BACKSPACE  |
-// |  SHIFT/TAB  |  A  |  O  |  E   |  U   |  I   |ALT/SPACE |                                    |ALT/SPACE |  D   |  H    |  T    |  N   |   S   |   SHIFT/ENTER  |
-// | CTRL/ESC    |  ;  |  Q  |  J   |  K   |  X   |  RAISE   |                                    |  RAISE   |  B   |  M    |  W    |  V   |   Z   | CTRL/DELETE |
+// |  SUP/TAB    |  (  |  )  |  .   |  P   |  Y   |  LOWER   |                                    |  LOWER   |  F   |  G    |  C    |  R   |   L   |   SUP/BACKSPACE  |
+// |  SHIFT/ESC  |  A  |  O  |  E   |  U   |  I   |ALT/SPACE |                                    |ALT/SPACE |  D   |  H    |  T    |  N   |   S   |   SHIFT/ENTER  |
+// |  CTRL/DELET |  ;  |  Q  |  J   |  K   |  X   |  RAISE   |                                    |  RAISE   |  B   |  M    |  W    |  V   |   Z   | CTRL/DELETE |
 
             bindings = <
-                &mt LGUI TILDE2  &kp DOT &kp LPAR &kp RPAR &kp P &kp Y &mo LWR &mo LWR &kp F &kp G &kp C &kp R &kp L &mt RGUI BSPC 
-                &mt LSHIFT TAB &kp A &kp O &kp E &kp U &kp I &mt LALT SPACE &mt LALT SPACE &kp D &kp H &kp T &kp N &kp S &mt LSHIFT RET
-                &mt LCTRL ESC &kp SEMI &kp Q &kp J &kp K &kp X &mo RSE &mo RSE &kp B &kp M &kp W &kp V &kp Z &mt LCTRL DEL
+                &mt LGUI TAB &kp LPAR &kp RPAR &kp DOT  &kp P &kp Y &mo LWR &mo LWR &kp F &kp G &kp C &kp R &kp L &mt LGUI BSPC 
+                &mt LSHIFT ESC &kp A &kp O &kp E &kp U &kp I &mt LALT SPACE &mt LALT SPACE &kp D &kp H &kp T &kp N &kp S &mt LSHIFT RET
+                &mt LCTRL DEL  &kp SEMI &kp Q &kp J &kp K &kp X &mo RSE &mo RSE &kp B &kp M &kp W &kp V &kp Z &mt LCTRL DEL
             >;
 
 
         };
         raise_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |       |   ,  |   {  |   }  |   '  |   "  |ADJ_layer|                                        |ADJ_layer|   *  |  7   |   8  |   9  |   -  |     |
+// |       |   {  |   }  |   ,  |   '  |   "  |ADJ_layer|                                        |ADJ_layer|   *  |  7   |   8  |   9  |   -  |     |
 // |       |   !  |   @  |   #  |   $  |   %  |         |                                        |         |   /  |  4   |   5  |   6  |   0  |     |
-// |       |   :  |   ^  | CALC |   ?  |   &  |         |                                        |         |   .  |  1   |   2  |   3  |   +  |     |
+// |       |   :  |   ^  | tilda|   ?  |   &  |         |                                        |         |   .  |  1   |   2  |   3  |   +  |     |
 
             bindings = <
-    &trans &kp COMMA &kp LBRC &kp RBRC &kp SQT &kp DQT &mo ADJ              &mo ADJ &kp ASTRK &kp N7  &kp N8  &kp N9  &kp MINUS  &trans
+    &trans &kp LBRC &kp RBRC &kp COMMA  &kp SQT &kp DQT &mo ADJ              &mo ADJ &kp ASTRK &kp N7  &kp N8  &kp N9  &kp MINUS  &trans
     &trans &kp EXCL &kp AT  &kp HASH &kp DLLR &kp PRCNT &trans              &trans &kp FSLH  &kp N4  &kp N5  &kp N6  &kp N0     &trans
-    &trans &kp COLON &kp CARET &kp K_CALC &kp QMARK &kp AMPS &trans         &trans &kp DOT   &kp N1  &kp N2  &kp N3  &trans     &trans
+    &trans &kp COLON &kp CARET &kp TILDE2 &kp QMARK &kp AMPS &trans         &trans &kp DOT   &kp N1  &kp N2  &kp N3  &trans     &trans
             >;
 
         };
         lower_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |       |   ,  |   [  |   ]  |   <  |   >  |         |                                       |         |PSCRN |  F7   |   F8  |   F9  |   _  |     |
-// |       |   !  |   @  |   ^  |  "|" |  F11 |         |                                       |         |   \  |  F4   |   F5  |   F6  | F10  |     |
-// |       |  :   |   <- |  v   |   -> |  F12 |ADJ_layer|                                       |ADJ_layer|   .  |  F1   |   F2  |   F3  |   =  |     |
+// |       |  [  |   ]  |   ^  |   <  |   >  |         |                                       |         |PSCRN |  F7   |   F8  |   F9  |   _  |     |
+// |       |  !  |   <- |   v  |   -> |   %  |         |                                       |         |   \  |  F4   |   F5  |   F6  | F10  |     |
+// |       |  :  |   ^  | "|"  |  F11 |  F12 |ADJ_layer|                                       |ADJ_layer|   .  |  F1   |   F2  |   F3  |   =  |     |
 
             bindings = <
-    &trans &kp COMMA &kp LBKT &kp RBKT &kp LT &kp GT     &trans          &trans &kp PSCRN &kp F7  &kp F8  &kp F9  &kp UNDER     &trans
-    &trans &kp EXCL  &kp AT &kp UP  &kp PIPE &kp F11     &trans         &trans &kp BSLH  &kp F4  &kp F5  &kp F6  &kp F10       &trans
-    &trans &kp COLON &kp LEFT  &kp DOWN  &kp RIGHT &kp F12 &mo ADJ         &mo ADJ &kp DOT   &kp F1  &kp F2  &kp F3  &kp EQUAL     &trans
+    &trans  &kp LBKT &kp RBKT& &kp UP &kp LT &kp GT     &trans           &trans &kp PSCRN &kp F7  &kp F8  &kp F9  &kp UNDER     &trans
+    &trans  &kp EXCL &kp LEFT &kp DOWN  &kp RIGHT &kp PRCNT  &trans         &trans &kp BSLH  &kp F4  &kp F5  &kp F6  &kp F10       &trans
+    &trans  &kp COLON &kp CARET  &trans  &kp F11 &kp F12 &mo ADJ         &mo ADJ &kp DOT   &kp F1  &kp F2  &kp F3  &kp EQUAL     &trans
             >;
 
         };
