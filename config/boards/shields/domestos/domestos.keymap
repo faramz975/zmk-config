@@ -28,6 +28,11 @@
             if-layers = <1 2 3>;
             then-layer = <4>;
         };
+        return-layer {
+            if-layers = <4>;
+            then-layer = <0>;
+        };
+
     };
     keymap {
         compatible = "zmk,keymap";
