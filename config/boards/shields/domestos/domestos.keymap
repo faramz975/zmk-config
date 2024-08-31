@@ -13,7 +13,7 @@
 };
 
 &mt {
-    quick-tap-ms = <100>;
+    quick-tap-ms = <200>;
 };
 
 / {
@@ -24,11 +24,6 @@
             if-layers = <1 2>;
             then-layer = <3>;
         };
-//        return-layer {
-//            if-layers = <4>;
-//            then-layer = <0>;
-//        };
-
     };
     keymap {
         compatible = "zmk,keymap";
@@ -75,27 +70,27 @@
         };
         adjust_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |       |bootloader|        |        |      |&tog DOT|          |                   |          |      |      |        |        |      |     |
-// |       |  BT_CLR  |BT_SEL 0|BT_SEL 1|BT_PRV| BT_NXT |BT_CLR_ALL|                   |BT_CLR_ALL|BT_NXT|BT_PRV|BT_SEL 1|BT_SEL 0|BT_CLR|     |
-// |       |sys_reset |        |        |      |        |          |                   |          |      |      |        |        |      |     |
+// |       |bootloader|        |        |      |  DOTo  |          |                   |          |      |      |        |        |bootloader|      |
+// |       |  BT_CLR  |BT_SEL 0|BT_SEL 1|BT_PRV| BT_NXT |BT_CLR_ALL|                   |BT_CLR_ALL|BT_NXT|BT_PRV|BT_SEL 1|BT_SEL 0|  BT_CLR  |      |
+// |  CAPS |sys_reset |        |        |      |        |          |                   |          |      |      |        |        | sys_reset| CAPS |
 
             bindings = <
-                &trans &bootloader   &none          &none          &none          &tog DOT          &none          &none          &none          &none          &none          &none          &bootloader &trans
-                &trans &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_PRV   &bt BT_NXT   &bt BT_CLR_ALL   &bt BT_CLR_ALL   &bt BT_NXT   &bt BT_PRV   &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR &trans
-                &trans &sys_reset    &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &sys_reset &trans
+                &trans   &bootloader   &none          &none          &none          &tog DOT          &none          &none          &none          &none          &none          &none          &bootloader &trans
+                &trans   &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_PRV   &bt BT_NXT   &bt BT_CLR_ALL   &bt BT_CLR_ALL   &bt BT_NXT   &bt BT_PRV   &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR &trans
+                &kp CAPS &sys_reset    &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &sys_reset &kp CAPS
             >;
 
         };
         doto_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |   ~   |  q  |   w  |   e  |   r  |   t  |    n    |                                       |      |     |     |     |     |     |     |
+// |   ~   |  q  |   w  |   e  |   r  |   t  |    n    |                                       | DEF  |     |     |     |     |     |     |
 // |  caps |  a  |   s  |   d  |   f  |   g  |ALT/SPACE|                                       |      |     |     |     |     |     |     |
-// | shift |  z  |   x  |   c  |   v  |   b  |   DEF   |                                       |      |     |     |     |     |     |     |
+// | shift |  z  |   x  |   c  |   v  |   b  |    4    |                                       |      |     |     |     |     |     |     |
 
             bindings = <
-                &kp TILDE  &kp Q    &kp W   &kp E   &kp R    &kp T      &tog DEF                &none   &none    &none    &none    &none    &none    &none
-                &kp CAPS    &kp A   &kp S   &kp D   &kp F    &kp G      &mt LALT SPACE          &none   &none    &none    &none    &none    &none    &none
-                &mt LSHIFT TILDE    &kp Z   &kp X   &kp C    &kp V      &kp B     &kp N         &none   &none    &none    &none    &none    &none    &none
+                &kp TILDE  &kp Q    &kp W   &kp E   &kp R    &kp T      &kp N4                &to DEF   &none    &none    &none    &none    &none    &none
+                &kp CAPS    &kp A   &kp S   &kp D   &kp F    &kp G      &mt LALT SPACE        &none      &none    &none    &none    &none    &none    &none
+                &mt LSHIFT TILDE    &kp Z   &kp X   &kp C    &kp V      &kp B     &kp N       &none      &none    &none    &none    &none    &none    &none
             >;
 
         };
