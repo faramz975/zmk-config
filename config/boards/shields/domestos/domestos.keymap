@@ -69,7 +69,7 @@
             bindings = <
                 &trans  &kp LBKT   &kp RBKT   &kp UP     &kp LT     &kp GT     &trans          &trans   &kp PSCRN  &kp F7  &kp F8  &kp F9  &kp UNDER  &trans
                 &trans  &kp EXCL   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PRCNT  &trans          &trans   &kp BSLH   &kp F4  &kp F5  &kp F6  &kp F10    &trans
-                &trans  &kp COLON  &kp CARET  &kp PIPE2  &kp F11    &kp F12    &mo ADJ         &mo ADJ  &kp PERIOD    &kp F1  &kp F2  &kp F3  &kp EQUAL  &trans
+                &trans  &kp COLON  &kp CARET  &kp PIPE  &kp F11    &kp F12    &mo ADJ         &mo ADJ  &kp PERIOD    &kp F1  &kp F2  &kp F3  &kp EQUAL  &trans
             >;
 
         };
