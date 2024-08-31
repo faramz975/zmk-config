@@ -24,10 +24,6 @@
             if-layers = <1 2>;
             then-layer = <3>;
         };
-        four-layer {
-            if-layers = <1 2 3>;
-            then-layer = <4>;
-        };
         return-layer {
             if-layers = <4>;
             then-layer = <0>;
@@ -44,9 +40,9 @@
 // |  CTRL/DELET |  ;  |  Q  |  J   |  K   |  X   |  RAISE   |                                    |  RAISE   |  B   |  M    |  W    |  V   |   Z   | CTRL/DELETE |
 
             bindings = <
-                &mt LGUI TAB    &kp LPAR  &kp RPAR  &kp DOT  &kp P  &kp Y  &mo LWR         &mo LWR         &kp F  &kp G  &kp C  &kp R  &kp L  &mt LGUI BSPC 
-                &mt LSHIFT ESC  &kp A     &kp O     &kp E    &kp U  &kp I  &mt LALT SPACE  &mt LALT SPACE  &kp D  &kp H  &kp T  &kp N  &kp S  &mt LSHIFT RET
-                &mt LCTRL DEL   &kp SEMI  &kp Q     &kp J    &kp K  &kp X  &mo RSE         &mo RSE         &kp B  &kp M  &kp W  &kp V  &kp Z  &mt LCTRL DEL
+                &mt LGUI TAB    &kp LPAR  &kp RPAR  &kp PERIOD  &kp P  &kp Y  &mo LWR         &mo LWR         &kp F  &kp G  &kp C  &kp R  &kp L  &mt LGUI BSPC 
+                &mt LSHIFT ESC  &kp A     &kp O     &kp E       &kp U  &kp I  &mt LALT SPACE  &mt LALT SPACE  &kp D  &kp H  &kp T  &kp N  &kp S  &mt LSHIFT RET
+                &mt LCTRL DEL   &kp SEMI  &kp Q     &kp J       &kp K  &kp X  &mo RSE         &mo RSE         &kp B  &kp M  &kp W  &kp V  &kp Z  &mt LCTRL DEL
             >;
 
 
@@ -79,9 +75,9 @@
         };
         adjust_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |       |   bootloader  |     |     |     |    |      |                           |      |     |     |     |     |     |     |
-// |       |     |     |     |   |   |      |                                        |      |     |     |     |     |     |     |
-// |       |    |     |    |     |   |      |                                        |      |     |     |     |     |     |     |
+// |       |bootloader|        |        |      |&tog DOT|          |                   |          |      |      |        |        |      |     |
+// |       |  BT_CLR  |BT_SEL 0|BT_SEL 1|BT_PRV| BT_NXT |BT_CLR_ALL|                   |BT_CLR_ALL|BT_NXT|BT_PRV|BT_SEL 1|BT_SEL 0|BT_CLR|     |
+// |       |sys_reset |        |        |      |        |          |                   |          |      |      |        |        |      |     |
 
             bindings = <
                 &trans &bootloader   &none          &none          &none          &tog DOT          &none          &none          &none          &none          &none          &none          &bootloader &trans
@@ -92,9 +88,9 @@
         };
         doto_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  tab  |  q  |   w  |   e  |   r  |   t  |   DEF   |                                       |      |     |     |     |     |     |     |
-// |  caps |  a  |   s  |   d  |   f  |   g  |ALT/SPACE|                                      |      |     |     |     |     |     |     |
-// | shift |  z  |   x  |   c  |   v  |   b  |    n    |                                      |      |     |     |     |     |     |     |
+// |  tab  |  q  |   w  |   e  |   r  |   t  |    n    |                                       |      |     |     |     |     |     |     |
+// |  caps |  a  |   s  |   d  |   f  |   g  |ALT/SPACE|                                       |      |     |     |     |     |     |     |
+// | shift |  z  |   x  |   c  |   v  |   b  |   DEF   |                                       |      |     |     |     |     |     |     |
 
             bindings = <
                 &kp TAB  &kp Q    &kp W   &kp E   &kp R    &kp T      &tog DEF                &none   &none    &none    &none    &none    &none    &none
