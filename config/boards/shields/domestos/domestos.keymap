@@ -24,10 +24,10 @@
             if-layers = <1 2>;
             then-layer = <3>;
         };
-        return-layer {
-            if-layers = <4>;
-            then-layer = <0>;
-        };
+//        return-layer {
+//            if-layers = <4>;
+//            then-layer = <0>;
+//        };
 
     };
     keymap {
