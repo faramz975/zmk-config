@@ -83,12 +83,12 @@
         };
         doto_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |   ~   |  q  |   w  |   e  |   r  |   t  |    n    |                                       | DEF  |     |     |     |     |     |     |
+// |   l   |  q  |   w  |   e  |   r  |   t  |    n    |                                       | DEF  |     |     |     |     |     |     |
 // |  caps |  a  |   s  |   d  |   f  |   g  |ALT/SPACE|                                       |      |     |     |     |     |     |     |
 // | shift |  z  |   x  |   c  |   v  |   b  |    4    |                                       |      |     |     |     |     |     |     |
 
             bindings = <
-                &kp TILDE  &kp Q    &kp W   &kp E   &kp R    &kp T      &kp N4                &to DEF   &none    &none    &none    &none    &none    &none
+                &kp L  &kp Q    &kp W   &kp E   &kp R    &kp T      &kp N4                &to DEF   &none    &none    &none    &none    &none    &none
                 &kp CAPS    &kp A   &kp S   &kp D   &kp F    &kp G      &mt LALT SPACE        &none      &none    &none    &none    &none    &none    &none
                 &mt LSHIFT TILDE    &kp Z   &kp X   &kp C    &kp V      &kp B     &kp N       &none      &none    &none    &none    &none    &none    &none
             >;
